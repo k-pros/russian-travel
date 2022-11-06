@@ -1,0 +1,1 @@
+Dir /A-D /B /S c:\dev\russian-travel\blocks >list.txt

@@ -1,0 +1,280 @@
+  /* div, a, h1, h2, h3, p, img, a, ul {
+    outline: 1px solid red;
+  } */
+
+.link-hover:hover {
+  opacity: 0.8;
+}
+
+.page {
+  background-color: #2a2c2f;
+}
+
+.page__container {
+  min-width: 320px;
+  max-width: 1184px;
+  margin: 0 auto;
+  font-family: 'Inter', Arial, sans-serif;
+  color: white;
+}
+
+/* Header */
+
+.header {
+  padding: 28px 0 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  background-image: url(/images/header-logo.svg);
+  width: 176px;
+  height: 52px;
+}
+
+.header__lang-links {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.header__lang-link {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.header__lang-link_active {
+  text-decoration: underline;
+}
+
+/* Lead */
+
+.lead__title {
+  margin: 0 auto 32px;
+  max-width: 720px;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: center;
+}
+
+.lead__subtitle {
+  margin: 0 auto 64px;
+  max-width: 640px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.lead__illustration {
+  display: block;
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+.lead__img {
+  max-width: 100%;
+}
+
+.lead__caption {
+  margin-top: 8px;
+  text-transform: uppercase;;
+}
+
+/* Intro */
+
+.intro {
+  margin: 0 auto;
+  padding: 92px 0 92px;
+  max-width: 984px;
+}
+
+.intro__title {
+  margin: 0 0 40px;
+  max-width: 690px;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+}
+
+.intro__text {
+  margin: 0 0 33px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 690px;
+}
+
+.intro__list {
+  margin: 0;
+  padding: 0;
+  max-width: 690px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px; 
+  list-style: none; 
+}
+
+/* Photo-grid */
+
+.photo-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.photo-grid__img {
+  width: 100%;
+  display: block;
+}
+
+/* Places */
+
+.places {
+  max-width: 984px;
+  padding: 92px 0;
+  margin: 0 auto;
+  display: grid;
+  gap: 80px;
+}
+
+.place {
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 460px) minmax(min-content, max-content);
+  grid-template-rows: repeat(2, min-content);
+  gap: 48px 40px;
+}
+
+.place__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+}
+
+.place__website {
+  align-self: end;
+}
+
+.place__url-heading {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  color: #aaa;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.place__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  transition: opacity 0.2s ease;
+}
+
+.place__image {
+  width: 100%;
+}
+
+.place__paragraph {
+  margin: 0 0 26px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.place__paragraph:last-child {
+  margin: 0;
+}
+
+/* cover */
+
+.cover__link {
+  min-height: 740px;
+  background-image: url(./images/cover-trains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+}
+
+.cover__link::before {
+  background-color: #2a2c2f;
+  opacity: .3;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* width: 100%;
+  height: 100%; */
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.cover__link:hover::before {
+  opacity: .8;
+}
+
+.cover__title{
+  margin: 0 auto;
+  max-width: 560px;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  text-align: center;
+}
+
+.cover__subtitle {
+  margin: 0 auto;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  padding: 92px 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.12;
+  margin-right: 18px;
+  transition: opacity 0.2s ease;
+}
+
+.footer__link:last-child {
+  margin: 0;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+}
