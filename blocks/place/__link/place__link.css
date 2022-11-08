@@ -5,3 +5,9 @@
   line-height: 1.22;
   transition: opacity 0.2s ease;
 }
+
+@media screen and (max-width: 320px) {
+  .place__link {
+    padding: 0 16px;
+  }
+}
