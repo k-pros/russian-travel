@@ -22,5 +22,6 @@
     max-width: 288px;
     flex-direction: column;
     gap: 48px;
+    padding-top: 64px;
   }
 }
